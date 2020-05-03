@@ -1,0 +1,17 @@
+.board {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .board-upbar {
+        background: rgba(rgb(214, 213, 213), 0.6);
+        padding: 8px 13px 0px;
+    
+        .board-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: whitesmoke;
+        }
+    }
+
+}

@@ -1,0 +1,21 @@
+<div class="board">
+
+    <div class="board-upbar">
+        <p class="board-name">
+            {{ board.name }}
+        </p>
+    </div>
+  
+    <div class="board-container">
+  
+        <div class="board-columns">
+            <div class="board-column" *ngFor="let column of board.columns">  
+                <div class="column-title">
+                    {{ column.name }}
+                </div>  
+            </div>
+        </div>
+  
+    </div>
+  
+  </div>
