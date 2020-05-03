@@ -30,7 +30,14 @@
                 display: flex;
                 flex-basis: 0;
                 flex-grow: 1;
-                flex-direction: column;                
+                flex-direction: column;
+
+                min-width: 300px;
+                margin: 50px;
+                padding: 25px;
+
+                border-radius: 4px;
+                background: rgba(white, 0.5);
             }
         }
 
@@ -44,4 +51,21 @@
             margin-bottom: 20px;
         }
     }
+}
+
+.tasks-container {
+    flex-grow: 1;
+    overflow-y: auto; 
+}
+
+.task {
+    display: flex;
+    padding: 15px 12px;
+    background: white;
+    border-bottom: solid 1px #ddd;
+    border-radius: 20px;
+
+    margin-bottom: 15px;
+
+    box-shadow: 0 8px 6px -6px black;
 }
