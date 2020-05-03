@@ -39,6 +39,10 @@
                 border-radius: 4px;
                 background: rgba(white, 0.5);
 
+                &:not(:first-child) {
+                    margin-left: 0;
+                }
+
                 .column-title {
                     color:  #1A535C;
                     //text-shadow: 1px 2px 2px #F7FFF7;
