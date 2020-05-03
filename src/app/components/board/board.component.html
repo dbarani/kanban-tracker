@@ -5,16 +5,17 @@
             {{ board.name }}
         </p>
     </div>
-  
+
     <div class="board-container">
-  
+
         <div class="board-columns">
-            <div class="board-column" *ngFor="let column of board.columns">  
+            <div class="board-column" *ngFor="let column of board.columns">
                 <div class="column-title">
                     {{ column.name }}
                 </div>
-                
-                <div class="tasks-container">
+
+                <div class="tasks-container" cdkDropList [cdkDropListData]="column.tasks"
+                    (cdkDropListDropped)="drop($event)">
                     <div class="task" *ngFor="let item of column.tasks" cdkDrag>
                         {{ item }}
                     </div>
@@ -22,7 +23,7 @@
 
             </div>
         </div>
-  
+
     </div>
-  
-  </div>
+
+</div>
