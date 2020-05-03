@@ -3,3 +3,17 @@
     flex-direction: column;
     height: 100%;
 }
+
+.app-name {
+    font-size: 28px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;    
+}
+
+.gradient-linear-text {
+    background: -webkit-linear-gradient(#06DEDB, #2af598);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,23 @@
+// Global style file that interoperates with bulma imported scss
+
+$familiy-sans-serif: "Catamaran", sans-serif;
+
+// Bulma customization
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Google Font -> Catamaran
+@import 'https://fonts.googleapis.com/css2?family=Catamaran';
+
+html, body {
+    height: 100%;
+}
+
+// Background
+html {
+    background-image: url('./assets/background.svg');
+    background-size: cover;
+
+    overflow-y: auto !important;
+}
