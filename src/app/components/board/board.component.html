@@ -8,7 +8,7 @@
 
     <div class="board-container">
 
-        <div class="board-columns">
+        <div class="board-columns" cdkDropListGroup>
             <div class="board-column" *ngFor="let column of board.columns">
                 <div class="column-title">
                     {{ column.name }}
